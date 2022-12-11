@@ -251,6 +251,7 @@ body{
 @media (max-width: 414px){
     .name{
         transform: scale(0.5);
+        background-color: red;
     }
     .work-projects{
         top: -300px;
