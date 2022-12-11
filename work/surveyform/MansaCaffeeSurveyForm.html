@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href="styles-surveyform.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+    <!--Heading!-->
+    <h1 id="title">Mansa Caffee</h1>
+    <h2>Customer Satisfaction Survey Form</h2>
+    <p id="description">Thank you for taking the time to help us improve our service</p>
+
+    <!--Survey Form!-->
+    <form id="survey-form" action="http://www.google.com/MansaCaffee.htm">
+    <!--Customer Identifation!-->
+      <fieldset>
+        <legend>Respondent Identification</legend>
+        <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" name="name" required></label>
+        <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" name="email" required></label>
+        <label for="number" id="number-label">Age: <input type="number" id="number" placeholder="Enter your age (optional)" name="age" min="10" max="120"></label>
+      </fieldset>
+
+      <!--Food Quality Form!-->
+      <fieldset class="fquality">
+        <legend>Food Quality</legend>
+        <label for="order-name">What did you order?</label><textarea id="order-name" placeholder="what did you order?" required></textarea>
+        <label class="titleradio">Taste quality:</label>
+        <label for="excellent-t" name="food-quality"><input type="radio" id="excellent-t" name="taste-quality" value="excellent" >Excellent</label>
+        <label for="good-t" name="food-quality"><input type="radio" id="good-t" name="taste-quality" value="good">Good</label>
+        <label for="fair-t" name="food-quality"><input type="radio" id="fair-t" name="taste-quality" value="fair">Fair</label>
+        <label for="poor-t" name="food-quality"><input type="radio" id="poor-t" name="taste-quality" value="poor">Poor</label>
+        <label for="verybad-t" name="food-quality"><input type="radio" id="verybad-t" name="taste-quality" value="verybad">Very bad</label>
+
+        <label class="titleradio">Freshness:</label>
+        <label for="excellent-f" name="food-quality"><input type="radio" id="excellent-f" name="freshness" value="excellent">Excellent</label>
+        <label for="good-f" name="food-quality"><input type="radio" id="good-f" name="freshness" value="good">Good</label>
+        <label for="fair-f" name="food-quality"><input type="radio" id="fair-f" name="freshness" value="fair">Fair</label>
+        <label for="poor-f" name="food-quality"><input type="radio" id="poor-f" name="freshness" value="poor">Poor</label>
+        <label for="verybad-f" name="food-quality"><input type="radio" id="verybad-f" name="freshness" value="verybad">Very bad
+      </fieldset>
+
+      <!--Service Quality Form!-->
+      <fieldset>
+        <legend>Service Quality</legend>
+        <label class="titleradiotop">Response time of the staff:</label>
+        <label for="excellent-sq" name="service-quality"><input type="radio" id="excellent-sq" name="response-time" value="excellent">Excellent</label>
+        <label for="good-sq" name="service-quality"><input type="radio" id="good-sq" name="response-time" value="good">Good</label>
+        <label for="fair-sq" name="service-quality"><input type="radio" id="fair-sq" name="response-time" value="fair">Fair</label>
+        <label for="poor-sq" name="service-quality"><input type="radio" id="poor-sq" name="response-time" value="poor">Poor</label>
+        <label for="verybad-sq" name="service-quality"><input type="radio" id="verybad-sq" name="response-time" value="verybad">Very bad</label>
+
+        <label class="titleradio">Politeness of the staff:</label>
+        <label for="excellent-sp" name="service-quality"><input type="radio" id="excellent-sp" name="politeness" value="excellent">Excellent</label>
+        <label for="good-sp" name="service-quality"><input type="radio" id="good-sp" name="politeness" value="good">Good</label>
+        <label for="fair-sp" name="service-quality"><input type="radio" id="fair-sp" name="politeness" value="fair">Fair</label>
+        <label for="poor-sp" name="service-quality"><input type="radio" id="poor-sp" name="politeness" value="poor">Poor</label>
+        <label for="verybad-sp" name="service-quality"><input type="radio" id="verybad-sp" name="politeness" value="verybad">Very bad</label>
+      </fieldset>
+
+      <!--other survey form!-->
+      <fieldset>
+        <legend>Other Questions</legend>
+        <label for="dropdown" class="titleradiotop">How did you hear about Mansa Caffee:</label>
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Mansa Caffee Instagram</option>
+            <option value="2">Mansa Caffee Web</option>
+            <option value="3">Social Media</option>
+            <option value="4">Friends/family</option>
+            <option value="5">Other</option>
+          </select>
+      
+        <label for="satisfied" class="titleradio">Are you satisfied with our services? <input type="checkbox" id="satisfied" value="customer-satisfied"></label> 
+        <label for="recommend" class="titleradiobottom">Would you recommend Mansa Caffe to your friends / family? <input type="checkbox" id="recommend" value="would-recommend"></label>
+        <label for="comment">
+        
+      </fieldset>
+      <!--Submit Button!-->
+      <input type="submit" id="submit">
+    </form>
+    <label class="imgsrc"> s</label>
+    </main>
+  </body>
+</html>

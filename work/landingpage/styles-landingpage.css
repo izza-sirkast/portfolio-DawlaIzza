@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'trebuchet MS' , sans-serif;
+  }
+  
+#nav-bar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-item: center;
+    background-color: burlywood;
+    height: 50px;
+    z-index: 1;
+    top: 0;
+  }
+  
+#heading {
+    margin: auto 20px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+  }
+  
+#header-img {
+    margin: auto 5px auto -2px;
+  }
+  
+.nav-ul {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    margin: auto 10px;
+    list-style: none;
+    flex-shrink: 0;
+  }
+  
+.nav-link {
+    margin: auto 15px;
+    text-decoration: none;
+    color: black;
+  }
+  
+#email {
+    padding: 3px;
+    width: 40%;
+  }
+  
+#submit {
+    background-color: burlywood;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    padding: 2px;
+  }
+  
+.brand-describe {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 60px auto 10px auto;
+    font-weight: bold;
+  }
+  
+#form {
+    text-align: center;
+  }
+  
+#features {
+    margin: 0px auto 60px auto;
+  }
+  
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0 auto;
+    width: 100%;
+  }
+  
+#features-img {
+    color: orange;
+    width: 4%;
+  }
+  
+.fa-truck-fast {
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+  
+.fa-note-sticky {
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+  
+.features-expl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0px 0px 0px 10px;
+    font-size: 17px;
+  }
+  
+.features-title {
+    font-weight: bold;
+    font-size: 27px;
+  }
+  
+#video {
+    display: block;
+    margin: 70px auto 0 auto;
+    z-index: 9;
+  }
+  
+#pricing {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto 0px auto;
+  }
+  
+.pricing-item {
+    border: 2px solid;
+    padding: 0px;
+    text-align: center;
+    width: 280px;
+    margin: 10px 10px 40px 10px;
+  }
+  
+.pricing-title {
+    background-color: burlywood;
+    margin: 0;
+    padding: 10px;
+    margin-top: -1px;
+    font-weight: bold;
+    font-size:20px;
+  }
+  
+.pricing-desc {
+    margin: 16px;
+  }
+  
+.pricing-desc-desc, .pricing-desc button{
+    margin: 8px;
+  }
+  
+.price {
+    font-size: 25px;
+    margin: 0px auto 10px auto;
+  }
+  
+.pricing-desc-desc {
+    font-size: 14px;
+  }
+  
+.pricing-desc button {
+    margin: 8px auto 2px auto;
+    padding: 3px;
+    font-size: 15px
+  }
+  
+.footer {
+    background-color: burlywood;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 900px;
+    margin: 50px auto 0px auto;
+    padding: 5px;
+  }
+  
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 2px;
+  }
+  
+.footer-contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+  }
+  
+.footer-date{
+    margin: 2px;
+    font-size: 14px;
+  }
+  
+@media only screen and (max-width: 600px){
+    #nav-bar{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 115px;
+    }
+    #heading{
+      margin: 4px auto;
+      border-bottom: 1px solid;
+    }
+    .nav-ul{
+      flex-direction: column;
+      margin: 2px auto;
+    }
+    .nav-ul li{
+      margin: 1px auto;
+    }
+    .brand-describe{
+      margin-top: 125px;
+    }
+    #features-img{
+      display: none;
+    }
+  }
+  
+@media only screen and (max-width: 450px){
+    #pricing{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .pricing-item{
+      margin: 10px auto;
+    }
+  }
