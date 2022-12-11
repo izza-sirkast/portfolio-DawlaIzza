@@ -260,6 +260,6 @@ body{
         height: 1000px;
     }
     #about p:first-child{
-        right: 100px;
+        right: 50px;
     }
 }
