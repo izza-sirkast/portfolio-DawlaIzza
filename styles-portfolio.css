@@ -244,19 +244,19 @@ body{
     #work{
         padding-top: 0px;
         padding-bottom: 0px;
-        height: 300vh;
+        height: 1300px;
     }
 }
 
 @media (max-width: 414px){
     .name{
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
     .work-projects{
         top: -300px;
         transform: scale(0.6);
     }
     #work{
-        height: 210vh;
+        height: 1000px;
     }
 }
